@@ -9,8 +9,9 @@
 .profile-body{
      background-color:  hsl(235, 46%, 20%);
      border-radius: 15px;
-     height: 555px;
+     height: 560px;
      margin-left: 100px;
+     margin-top: 20px;
 }
 .tracker{
    

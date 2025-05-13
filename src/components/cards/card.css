@@ -32,7 +32,7 @@
 .social{
     background-color: hsl(264, 64%, 52%);
 }
-.selfcare{
+.self-care{
     background-color: hsl(43, 84%, 65%);
 }
 .icon{
@@ -56,7 +56,7 @@
     height: 100px;
     top: -22%;
 }
-.icon-selfcare{
+.icon-self-care{
     top: -20%;
     height: 70px;
 }
@@ -67,7 +67,7 @@
     flex-direction: column;
     width: 300px;
     justify-content: flex-start;
-    margin-top: -40px;
+    margin-top: -20px;
     height: 280px;
 }
 .card-body{
