@@ -4,3 +4,15 @@ body{
     font-family: "Rubik";
     background-color: hsl(226, 43%, 10%);
 }
+
+#tracker{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+.profile{
+    flex-direction: column;
+    display: flex;
+    margin-top: 70px;
+
+}

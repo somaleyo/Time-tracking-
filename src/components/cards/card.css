@@ -4,6 +4,7 @@
     flex-direction: row;
     width: 1100px;
     gap: 35px;
+    margin-top: 100px;
 }
 .img-bg{
     position: relative;
@@ -11,7 +12,7 @@
     border-top-right-radius: 15px;
     display: flex;
     justify-content: flex-end;
-    top: 12%;
+    top: 4%;
     z-index: -1;
     overflow: hidden;
     height: 90px;
@@ -36,8 +37,8 @@
 }
 .icon{
     position: relative;
-    height: 85px;
-    top: -10%;
+    height: 70px;
+    top: -5%;
     overflow: hidden;
     padding-right: 15px;
 }
@@ -48,16 +49,16 @@
     top: -8%;
 }
 .icon-exercise{
-    height: 60px;
+    height: 50px;
     top: -1%;
 }
 .icon-social{
-    height: 110px;
-    top: -18%;
+    height: 100px;
+    top: -22%;
 }
 .icon-selfcare{
-    top: -18%;
-    height: 80px;
+    top: -20%;
+    height: 70px;
 }
 
 
@@ -65,6 +66,9 @@
     display: flex;
     flex-direction: column;
     width: 300px;
+    justify-content: flex-start;
+    margin-top: -40px;
+    height: 280px;
 }
 .card-body{
     background-color: hsl(235, 46%, 20%);
