@@ -17,8 +17,8 @@ export default function Card (props){
                             <h1>{props.temps}hrs</h1>
                             <h3 className='lastweek'>
                                 {window.location.pathname.includes('daily') ? 'Yesterday' : 
-                          window.location.pathname.includes('monthly') ? 'Last Month' : 'Last Week'} 
-                        - {props.lastweek}hrs
+                              window.location.pathname.includes('monthly') ? 'Last Month' : 'Last Week'} 
+                            - {props.lastweek}hrs
                             </h3>
                         </div>
                     </div>
