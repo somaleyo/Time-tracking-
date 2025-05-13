@@ -1,7 +1,9 @@
 .cards-container{
     display: flex;
     flex-wrap: wrap;
-
+    flex-direction: row;
+    width: 1100px;
+    gap: 35px;
 }
 .img-bg{
     position: relative;
@@ -9,10 +11,10 @@
     border-top-right-radius: 15px;
     display: flex;
     justify-content: flex-end;
-    top: 7%;
+    top: 12%;
     z-index: -1;
     overflow: hidden;
-    height: 70px;
+    height: 90px;
 }
 .work{
     background-color: hsl(15, 100%, 70%);
@@ -27,16 +29,35 @@
     background-color: hsl(145, 58%, 55%)
 }
 .social{
-    background-color: (264, 64%, 52%);
+    background-color: hsl(264, 64%, 52%);
 }
 .selfcare{
     background-color: hsl(43, 84%, 65%);
 }
 .icon{
     position: relative;
-    height: 80px;
+    height: 85px;
     top: -10%;
     overflow: hidden;
+    padding-right: 15px;
+}
+.icon-play{
+    top: -6%;
+}
+.icon-study{
+    top: -8%;
+}
+.icon-exercise{
+    height: 60px;
+    top: -1%;
+}
+.icon-social{
+    height: 110px;
+    top: -18%;
+}
+.icon-selfcare{
+    top: -18%;
+    height: 80px;
 }
 
 

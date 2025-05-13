@@ -3,11 +3,11 @@ export default function Card (props){
 
     return(
         <>
-            <section id='cards'>
-                <div className='cards-container'>
+            
+               
                     <div className='card'>
                         <div className={props.class} >
-                            <img src={props.image} className='icon' alt="" />
+                            <img src={props.image}  className={props.classimage} alt="" />
                         </div>
                         <div className="card-body">
                             <div className="titre">
@@ -17,10 +17,8 @@ export default function Card (props){
                             <h1>{props.temps}hrs</h1>
                             <h3 className='lastweek'>Last Week-{props.lastweek}hrs</h3>
                         </div>
-
                     </div>
-                </div>
-            </section>
+          
         </>
     )
 }
