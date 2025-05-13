@@ -10,9 +10,21 @@ export default function Profile(props) {
                 <h1 className='profile-name'>{props.name} </h1>
             </div>
             <div className="tracker">
-                <h3 className='daily track'>Daily</h3>
-                <h3 className='weekly track'>Weekly</h3>
-                <h3 className='monthly track'>Monthly</h3>
+                <h3 
+                    className={`daily track ${props.activeTimeframe === 'daily' ? 'active' : ''}`}
+                    onClick={() => props.onTimeframeChange('daily')}>
+                        Daily
+                </h3>
+                <h3 
+                     className={`weekly track ${props.activeTimeframe === 'weekly' ? 'active' : ''}`}
+                    onClick={() => props.onTimeframeChange('weekly')}>
+                        Weekly
+                </h3>
+                <h3 
+                      className={`monthly track ${props.activeTimeframe === 'monthly' ? 'active' : ''}`}
+                    onClick={() => props.onTimeframeChange('monthly')}>
+                        Monthly
+                </h3>
             </div>
         </div>
     </>

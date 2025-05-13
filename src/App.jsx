@@ -1,18 +1,25 @@
 import { useState } from 'react'
-
 import './App.css'
 import Card from './components/cards/card'
 import Profile from './components/profile/profile'
-
+import data from './data/data.json'
 
 function App() {
+  const [timeframe , setTimeframe] = useState('weekly')
   
+  const handleTimeframeChange = (newTimeframe) =>{
+    setTimeframe(newTimeframe)
+  }
 
   return (
     <>
     <section id='tracker'>
       <div className='profile'>
-        <Profile pfp="../src/assets/images/image-jeremy.png" name="Jeremy Robson"/>
+        <Profile
+         pfp="../src/assets/images/image-jeremy.png" 
+         name="Jeremy Robson"
+         onTimeframChange={handleTimeframeChange}
+         activeTimeframe={timeframe} />
       </div>
       <div className='cards-container'>
           <Card class="img-bg work" image="../src/assets/images/icon-work.svg" titre="Work" temps="32" lastweek="37"   classimage="icon" />

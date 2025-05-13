@@ -79,7 +79,8 @@
     padding-right: 30px;
 }
 .card-body:hover{
-    
+    background-color: #34397b ;
+    cursor: pointer;
 }
 .titre{
     display: flex;
