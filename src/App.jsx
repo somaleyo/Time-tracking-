@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <Card/>
+      <Card class="img-bg work" image="../src/assets/images/icon-work.svg" titre="Work" temps="32" lastweek="37"    />
     </>
   )
 }

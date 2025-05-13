@@ -1,0 +1,89 @@
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.img-bg{
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+    top: 7%;
+    z-index: -1;
+    overflow: hidden;
+    height: 70px;
+}
+.work{
+    background-color: hsl(15, 100%, 70%);
+}
+.play{
+    background-color:hsl(195, 74%, 62%) ;
+}
+.study{
+    background-color:hsl(348, 100%, 68%) ;
+}
+.exercise{
+    background-color: hsl(145, 58%, 55%)
+}
+.social{
+    background-color: (264, 64%, 52%);
+}
+.selfcare{
+    background-color: hsl(43, 84%, 65%);
+}
+.icon{
+    position: relative;
+    height: 80px;
+    top: -10%;
+    overflow: hidden;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.card-body{
+    background-color: hsl(235, 46%, 20%);
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.titre{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+h2{
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+h1{
+    font-weight:300;
+    font-size: 50px;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+.lastweek{
+    color:  hsl(236, 100%, 87%);
+    font-weight: 300;
+}
+
+.point{
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+.point:hover{
+    cursor: pointer;
+}
+.point:active{
+    opacity: 0.9;
+}
