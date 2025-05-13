@@ -12,7 +12,7 @@ export default function Card (props){
                         <div className="card-body">
                             <div className="titre">
                                 <h2>{props.titre}</h2>
-                                <span className='point'>...</span>
+                                <span className='point'><img src="../src/assets/images/icon-ellipsis.svg" alt="" /></span>
                             </div>
                             <h1>{props.temps}hrs</h1>
                             <h3 className='lastweek'>Last Week-{props.lastweek}hrs</h3>

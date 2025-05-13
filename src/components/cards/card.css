@@ -74,6 +74,9 @@
     padding-left: 30px;
     padding-right: 30px;
 }
+.card-body:hover{
+    
+}
 .titre{
     display: flex;
     align-items: center;
@@ -96,6 +99,7 @@ h1{
 .lastweek{
     color:  hsl(236, 100%, 87%);
     font-weight: 300;
+    font-size: 18px;
 }
 
 .point{
