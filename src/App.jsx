@@ -7,7 +7,8 @@ import data from './data/data.json'
 function App() {
   // gere le chagement au tracker
   const [timeframe , setTimeframe] = useState('weekly')
-  
+  // permet de changer d'etat, passe de weeekly a daily ou monthly au choix ,
+  //  va etre utilise au click
   const handleTimeframeChange = (newTimeframe) =>{
     setTimeframe(newTimeframe)
   }
@@ -19,7 +20,9 @@ function App() {
         <Profile
          pfp="../src/assets/images/image-jeremy.png" 
          name="Jeremy Robson"
+        //  onclick 
          onTimeframeChange={handleTimeframeChange}
+        //  active, ce qui est actuellement 
          activeTimeframe={timeframe} />
       </div>
       <div className='cards-container'>
@@ -37,6 +40,7 @@ function App() {
               titre={item.title} 
               temps={currentData.current} 
               lastweek={currentData.previous}
+              timeframe={timeframe}
               classimage={`icon ${cssClass !== 'work' ? `icon-${cssClass}` : ''}`} 
             />
           )
