@@ -1,11 +1,8 @@
 import './card.css'
 
-import work from '/src/assets/images/icon-work.svg'
-import play from '/src/assets/images/icon-play.svg'
-import social from '/src/assets/images/icon-social.svg'
-import exercise from '/src/assets/images/icon-exercise.svg'
-import selfcare from '/src/assets/images/icon-self-care.svg'
-import study from '/src/assets/images/icon-study.svg'
+
+
+
 export default function Card (props){
   let timeframeText = 'Last Week';
     
@@ -14,15 +11,8 @@ export default function Card (props){
     } else if (props.timeframe === 'monthly') {
         timeframeText = 'Last Month';
     }
-const img = {
-    "Work":  {work},
-    "Play":  {play},
-    "Study":  {study},
-    "Exercise":  {exercise},
-    "Social":  {social},
-    "Self-care":  {selfcare},
-    
-}
+
+
   
     return(
         <>
@@ -49,3 +39,4 @@ const img = {
         </>
     )
 }
+

@@ -4,7 +4,12 @@ import Card from './components/cards/card'
 import Profile from './components/profile/profile'
 import data from './data/data.json'
 import jeremy from '/src/assets/images/image-jeremy.png'
-
+import work from '/src/assets/images/icon-work.svg'
+import play from '/src/assets/images/icon-play.svg'
+import social from '/src/assets/images/icon-social.svg'
+import exercise from '/src/assets/images/icon-exercise.svg'
+import selfcare from '/src/assets/images/icon-self-care.svg'
+import study from '/src/assets/images/icon-study.svg'
 
 
 
@@ -17,7 +22,15 @@ function App() {
   const handleTimeframeChange = (newTimeframe) =>{
     setTimeframe(newTimeframe)
   }
+const ikon= {
+    "Work":  (`${work}`),
+    "Play":  (`${play}`),
+    "Study":  (`${study}`),
+    "Exercise":  (`${exercise}`),
+    "Social":  (`${social}`),
+    "Self-Care":  (`${selfcare}`),
 
+ }
   return (
     <>
     <section id='tracker'>
@@ -41,7 +54,7 @@ function App() {
             <Card 
               key={index}
               class={`img-bg ${cssClass}`} 
-              image={`../src/assets/images/icon-${cssClass}.svg`}
+              image={ikon[item.title]}
               titre={item.title} 
               temps={currentData.current} 
               lastweek={currentData.previous}
