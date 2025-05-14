@@ -22,11 +22,13 @@ export default function Card (props){
                             <h2>{props.titre}</h2>
                             <span className='point'><img src="../src/assets/images/icon-ellipsis.svg" alt="" /></span>
                         </div>
+                        <div className="hours">
                         <h1>{props.temps}hrs</h1>
                         <h3 className='lastweek'>
                            {timeframeText} - {props.lastweek}hrs
                         </h3>
                     </div>
+                </div>
                 </div>
           
         </>

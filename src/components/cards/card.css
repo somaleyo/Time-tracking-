@@ -117,3 +117,33 @@ h1{
 .point:active{
     opacity: 0.9;
 }
+@media (max-width:1056px){
+    body{
+        overflow-x: hidden;
+    }
+    .cards-container{
+        flex-direction: column;
+        margin-left: 30px;
+    }
+    .card{
+        width: 430px;
+        margin-top: -55px;
+        
+    }
+    .card-body{
+        height: 150px;
+        
+    }
+    .hours{
+        display: flex;
+        gap: 20px;
+        justify-content: space-between; 
+    }
+    .lastweek{
+        margin-bottom: 0;
+        margin-top: 40px;
+    }
+    .img-bg{
+        top: 17%;
+    }
+}

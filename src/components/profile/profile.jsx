@@ -6,8 +6,10 @@ export default function Profile(props) {
         <div className="profile-body">
             <div className="profile-info">
                 <img src={props.pfp} className='pfp' alt="" />
+                <div className="text-profile">
                 <p className='report'>Report for</p>
                 <h1 className='profile-name'>{props.name} </h1>
+                </div>
             </div>
             <div className="tracker">
                 <h3 
