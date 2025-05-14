@@ -56,7 +56,7 @@
     color: white;
 }
 
-@media (max-width:1056px){
+@media (max-width:870px){
     .profile-info{
         display: flex;
         gap:30px;
@@ -76,6 +76,36 @@
     .profile-body{
         width:  430px;
         height: 230px;
+        margin-left: 40px;
+    }
+    .tracker{
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: -20px;
+    }
+}
+@media (min-width:870px)and (max-width:1057px){
+    .profile-info{
+        display: flex;
+        gap:30px;
+        width: 380px;
+        height: 105px;
+    }
+    .profile-name{
+        width: 300px;
+        font-size: 35px;
+    }
+    .pfp{
+        width: 80px;   
+        height: 80px; 
+        margin-left: 10px;
+        
+    }
+    .profile-body{
+        width:  430px;
+        height: 230px;
+        margin-left: -30px;
     }
     .tracker{
         width: 350px;
