@@ -3,6 +3,11 @@ import './App.css'
 import Card from './components/cards/card'
 import Profile from './components/profile/profile'
 import data from './data/data.json'
+import jeremy from '/src/assets/images/image-jeremy.png'
+
+
+
+
 
 function App() {
   // gere le chagement au tracker
@@ -18,7 +23,7 @@ function App() {
     <section id='tracker'>
       <div className='profile'>
         <Profile
-         pfp="../src/assets/images/image-jeremy.png" 
+         pfp={jeremy}
          name="Jeremy Robson"
         //  onclick 
          onTimeframeChange={handleTimeframeChange}
